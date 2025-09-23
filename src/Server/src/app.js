@@ -7,8 +7,6 @@ app.use(express.json())
 
 const port = process.env.PORT || 3000;
 
-module.exports = serverless(app);
-
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Content-Type");
