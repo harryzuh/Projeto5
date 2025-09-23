@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "test:db": "node ./src/db.test.js"
+    "test:db": "node ./src/db.test.js",
+    "postinstall": "chmod +x node_modules/.bin/nodemon || true"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
