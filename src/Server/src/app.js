@@ -4,7 +4,6 @@ import routes from "./routes.js"
 const app = express()
 
 app.use(express.json())
-const express = require('express');
 const serverless = require('serverless-http');
 
 const port = process.env.PORT || 3000;
