@@ -8,6 +8,8 @@ import "./index.css";
 import Login from "./Routes/Login/Login.jsx";
 import Cadastro from "./Routes/Cadastro/Cadastro.jsx";
 import Home from "./Routes/Home/Home.jsx";
+import MeusProjetos from "./Routes/MeusProjetos/MeusProjetos.jsx"
+import Perfilusuario from "./Routes/Perfil_Usuario/perfilusuario.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/meusprojetos",
+    element: <MeusProjetos />,
+  },
+  {
+    path: "/perfil",
+    element: <Perfilusuario />,
   },
 ]);
 
